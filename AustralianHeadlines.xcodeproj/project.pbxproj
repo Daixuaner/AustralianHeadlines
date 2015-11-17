@@ -16,6 +16,8 @@
 		A35AEFBB1BFA16C50037CA01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A35AEFB91BFA16C50037CA01 /* LaunchScreen.storyboard */; };
 		A35AEFC61BFA16C50037CA01 /* AustralianHeadlinesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A35AEFC51BFA16C50037CA01 /* AustralianHeadlinesTests.m */; };
 		A35AEFD11BFA16C50037CA01 /* AustralianHeadlinesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A35AEFD01BFA16C50037CA01 /* AustralianHeadlinesUITests.m */; };
+		A399193C1BFAB4C900BF3FC6 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A399193B1BFAB4C900BF3FC6 /* WebViewController.m */; settings = {ASSET_TAGS = (); }; };
+		A399193F1BFAB67800BF3FC6 /* ZPXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A399193E1BFAB67800BF3FC6 /* ZPXNavigationController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		A35AEFCC1BFA16C50037CA01 /* AustralianHeadlinesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AustralianHeadlinesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A35AEFD01BFA16C50037CA01 /* AustralianHeadlinesUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AustralianHeadlinesUITests.m; sourceTree = "<group>"; };
 		A35AEFD21BFA16C50037CA01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A399193A1BFAB4C900BF3FC6 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		A399193B1BFAB4C900BF3FC6 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		A399193D1BFAB67800BF3FC6 /* ZPXNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPXNavigationController.h; sourceTree = "<group>"; };
+		A399193E1BFAB67800BF3FC6 /* ZPXNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPXNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,10 @@
 			children = (
 				A35AEFAB1BFA16C50037CA01 /* AppDelegate.h */,
 				A35AEFAC1BFA16C50037CA01 /* AppDelegate.m */,
+				A399193A1BFAB4C900BF3FC6 /* WebViewController.h */,
+				A399193B1BFAB4C900BF3FC6 /* WebViewController.m */,
+				A399193D1BFAB67800BF3FC6 /* ZPXNavigationController.h */,
+				A399193E1BFAB67800BF3FC6 /* ZPXNavigationController.m */,
 				A35AEFAE1BFA16C50037CA01 /* ViewController.h */,
 				A35AEFAF1BFA16C50037CA01 /* ViewController.m */,
 				A35AEFB11BFA16C50037CA01 /* Main.storyboard */,
@@ -273,8 +283,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A399193F1BFAB67800BF3FC6 /* ZPXNavigationController.m in Sources */,
 				A35AEFB01BFA16C50037CA01 /* ViewController.m in Sources */,
 				A35AEFAD1BFA16C50037CA01 /* AppDelegate.m in Sources */,
+				A399193C1BFAB4C900BF3FC6 /* WebViewController.m in Sources */,
 				A35AEFB61BFA16C50037CA01 /* AustralianHeadlines.xcdatamodeld in Sources */,
 				A35AEFAA1BFA16C50037CA01 /* main.m in Sources */,
 			);
@@ -418,6 +430,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AustralianHeadlines/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.simba.AustralianHeadlines;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -429,6 +442,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AustralianHeadlines/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.simba.AustralianHeadlines;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -502,6 +516,7 @@
 				A35AEFD71BFA16C50037CA01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A35AEFD81BFA16C50037CA01 /* Build configuration list for PBXNativeTarget "AustralianHeadlinesTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +525,7 @@
 				A35AEFDA1BFA16C50037CA01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A35AEFDB1BFA16C50037CA01 /* Build configuration list for PBXNativeTarget "AustralianHeadlinesUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +534,7 @@
 				A35AEFDD1BFA16C50037CA01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

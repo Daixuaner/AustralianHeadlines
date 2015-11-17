@@ -16,12 +16,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    UIWebView *webView=[[UIWebView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    webView.backgroundColor=[UIColor purpleColor];
+    [self.view addSubview:webView];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 
 @end
